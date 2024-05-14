@@ -1,22 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8" />
-    <title>Steph Hornby - Photographer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
     <link href="global.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Encode+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .carousel {
+          display: block;
+          width: 500px; /* Adjust width as needed */
+          overflow: hidden;
+          position: relative;
+          margin: 0 auto;
+        }
+        .carousel img {
+          width: 100%;
+          display: block;
+        }
+        .carousel-btn {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background: rgba(0,0,0,0.5);
+          color: white;
+          border: none;
+          cursor: pointer;
+          padding: 10px 15px;
+          z-index: 2;
+        }
+        .prev-btn {
+          left: 0;
+        }
+        .next-btn {
+          right: 0;
+        }
+    </style>
 </head>
+
 <body>
     <ul>
         <li><a href="index.html">Photography Portfolio</a></li>
         <li><a href="contact_me.html">Contact Me</a></li>
     </ul>
+
     <div class="clear spacer v30"></div>
-    <h1>Photography Portfolio</h1>
-    <div class="clear spacer v40"></div>
+    <h1> Steph Hornby - Photography Portfolio</h1>
+    <div class="clear spacer v30"></div>
+
+    <div class="carousel">
+        <img src="https://i.imgur.com/CsW3cda.jpg" title="source: imgur.com" alt="Image01" />
+        <img src="https://i.imgur.com/JEcph8P.jpg" title="source: imgur.com" alt="Image02">
+        <img src="https://i.imgur.com/Jo8G8V7.jpg" title="source: imgur.com" alt="Image03">
+        <img src="https://i.imgur.com/ZUgGkUw.jpg" title="source: imgur.com" alt="Image04">
+        <img src="https://i.imgur.com/q6c9XBk.jpg" title="source: imgur.com" alt="Image05">
+        <img src="https://i.imgur.com/YbCr8NA.jpg" title="source: imgur.com" alt="Image06">
+        <img src="https://i.imgur.com/BPnVzJr.jpg" title="source: imgur.com" alt="Image07">
+        <img src="https://i.imgur.com/HVAb2UH.jpg" title="source: imgur.com" alt="Image08">
+        <img src="https://i.imgur.com/IaMQwly.jpg" title="source: imgur.com" alt="Image09">
+        <img src="https://i.imgur.com/36S11vt.jpg" title="source: imgur.com" alt="Image10">
+        <img src="https://i.imgur.com/g8CHy8M.jpg" title="source: imgur.com" alt="Image11">
+        <img src="https://i.imgur.com/9N3KWeb.jpg" title="source: imgur.com" alt="Image12">
+    </div>
+
+    <div class="clear spacer v30"></div>
+
+    <button class="carousel-btn prev-btn" onclick="prevSlide()">Previous</button>
+    <button class="carousel-btn next-btn" onclick="nextSlide()">Next</button>
+    
+    <script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll('.carousel img');
+      
+      function showSlide(index) {
+        if (index < 0) {
+          slideIndex = slides.length - 1;
+        } else if (index >= slides.length) {
+          slideIndex = 0;
+        }
+        slides.forEach((slide, i) => {
+          if (i === slideIndex) {
+            slide.style.display = 'block';
+          } else {
+            slide.style.display = 'none';
+          }
+        });
+      }
+    
+      function prevSlide() {
+        showSlide(--slideIndex);
+      }
+    
+      function nextSlide() {
+        showSlide(++slideIndex);
+      }
+    
+      showSlide(slideIndex);
+    </script>
 </body>
+
 <footer>
     <div id="footer">
         <div class="clear spacer v1"></div>
@@ -24,4 +109,5 @@
         <div class="clear spacer v1"></div>
     </div>
 </footer>
+
 </html>

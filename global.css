@@ -101,3 +101,31 @@ input {
         padding: 5px;
     }
 }
+.carousel {
+    display: block;
+    width: 300px; /* Adjust width as needed */
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+.carousel img {
+    width: 100%;
+    display: block;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    z-index: 2;
+}
+.prev-btn {
+    left: 0;
+}
+.next-btn {
+    right: 0;
+}
