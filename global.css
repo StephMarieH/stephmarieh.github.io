@@ -109,7 +109,8 @@ input {
 
 .carousel {
     display: block;
-    width: 40%; /* Adjust width as needed */
+    max-width: 60%;
+    max-height: 50%;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
