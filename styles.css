@@ -54,38 +54,12 @@ li {
 
 /* --------------- CAROUSEL ---------------- */
 
-/* Container for the carousel */
 .carousel {
-    position: relative;
-    width: 100%;
-    max-width: 1440px;  /* Max width for laptop screens */
-    margin: 0 auto;  /* Centers the carousel on the screen */
-    overflow: hidden;
-  }
-  
-  /* Carousel image container */
-  .carousel-images {
-    display: flex;
-    transition: transform 1s ease-in-out;
-  }
-  
-  /* Carousel images styling */
-  .carousel-images img {
-    max-height: 500px;  /* Maximum height of 500px for images */
-    width: 100%;  /* Adjusts the width to fit the container's width */
-    object-fit: contain;  /* Ensures the aspect ratio is maintained */
-  }
-  
-  /* Keyframes for sliding the carousel images */
-  @keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-  }
-  
-  /* Add the animation to slide images every 10 seconds */
-  .carousel-images {
-    animation: slide 30s infinite;
-  }
+    display: block;
+    max-width: 60%;
+    display: block;
+}
+
     
 /* --------------- CAROUSEL BUTTONS ---------------- */
 
