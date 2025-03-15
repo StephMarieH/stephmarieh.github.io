@@ -23,39 +23,20 @@ a {
 }
 
 
-h1, h2 {
-    margin: 0 auto;
-    font-weight: normal;
-}
-
 h1 {
     font-size: 2.5em;
+    margin: 0 auto;
 }
 
 h2 {
-    max-width: 500px;
     font-size: 1.5em;
-    font-weight: 400;
-}
-
-input {
-    border: 0;
-    padding: 10px;
-    font-size: 1em;
-}
-
-input[type="submit"] {
-    font-size: 1em;
-    background: rgb(33, 189, 255);
-    color: rgb(255, 255, 255);
+    margin: 0 auto;
 }
 
 
 ul {
-    font-size: 1em;
     padding: 15px;
     text-align: right;
-    color: rgb(70, 70, 70);
     background: rgb(235, 235, 235);
     margin: 0%;
 }
@@ -130,10 +111,6 @@ li {
     margin: 0%;
 }
 
-
-.spacer.v1 {
-    height: 1px;
-}
 
 .spacer.v20 {
     height: 20px;
