@@ -54,32 +54,37 @@ li {
 
 /* --------------- CAROUSEL ---------------- */
 
+/* Container for the carousel */
 .carousel {
-    max-height: 500px;
     position: relative;
-    margin: 0 auto;
-    border: 3px solid #ccc;
-}
-
-.carousel-images {
+    width: 100%;
+    max-width: 100%;  /* Optional: Controls the max width */
+    overflow: hidden;
+  }
+  
+  /* Carousel image container */
+  .carousel-images {
     display: flex;
-    transition: transform 0.2s ease-in-out;
-}
-
-.carousel img {
-    height: 100%;
-    object-fit: contain;
-    display: block;
-    animation: slideAnimation 15s infinite;
-}
-
-@keyframes slideAnimation {
+    transition: transform 1s ease-in-out;
+  }
+  
+  /* Carousel images styling */
+  .carousel-images img {
+    max-height: 500px;
+    width: auto;
+    object-fit: contain; /* Ensures the aspect ratio is maintained */
+  }
+  
+  /* Keyframes for sliding the carousel images */
+  @keyframes slide {
     0% { transform: translateX(0); }
-    33.33% { transform: translateX(-100%); }
-    66.66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
-}
-
+    100% { transform: translateX(-100%); }
+  }
+  
+  /* Add the animation to slide images every 10 seconds */
+  .carousel-images {
+    animation: slide 30s infinite;
+  }  
 
 
 /* --------------- CAROUSEL BUTTONS ---------------- */
