@@ -7,6 +7,8 @@
     Light Gray : #E3EBF2;
 */
 
+/* --------------- GLOBAL ---------------- */
+
 body {
     font-size: 1em;
     margin: 0%;
@@ -16,12 +18,6 @@ body {
     background-color: rgb(255, 255, 255);
     color: rgb(70, 70, 70);
 }
-
-
-a {
-    color: rgb(70, 70, 70);
-}
-
 
 h1 {
     font-size: 2.5em;
@@ -33,6 +29,12 @@ h2 {
     margin: 0 auto;
 }
 
+a {
+    color: rgb(70, 70, 70);
+}
+
+
+/* --------------- PAGE LIST ---------------- */
 
 ul {
     padding: 15px;
@@ -50,6 +52,8 @@ li {
 }
 
 
+/* --------------- CAROUSEL ---------------- */
+
 .carousel {
     display: block;
     max-width: 60%;
@@ -63,6 +67,9 @@ li {
     width: 100%;
     display: block;
 }
+
+
+/* --------------- CAROUSEL BUTTONS ---------------- */
 
 .carousel-btn {
     font-size: 1.5em;
@@ -91,6 +98,8 @@ li {
 }
 
 
+/* --------------- SELF-PORTRAIT ---------------- */
+
 .portrait .middleColumn {
     text-align: center;
 }
@@ -102,6 +111,8 @@ li {
 }
 
 
+/* --------------- FOOTER ---------------- */
+
 .footer {
     font-size: 1em;
     padding: 1px;
@@ -111,6 +122,8 @@ li {
     margin: 0%;
 }
 
+
+/* --------------- FORMAT ---------------- */
 
 .spacer.v20 {
     height: 20px;
@@ -124,6 +137,8 @@ li {
     clear: both;
 }
 
+
+/* --------------- PHONE SCREEN ---------------- */
 
 @media (max-width: 600px) {
 

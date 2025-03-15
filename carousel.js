@@ -1,8 +1,12 @@
+// --------------- VARIABLES ---------------
 
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.carousel img');
-    
-    function showSlide(index) {
+let slideIndex = 0;
+const slides = document.querySelectorAll('.carousel img');
+
+
+// --------------- FUNCTIONS ---------------
+
+function showSlide(index) {
     if (index < 0) {
         slideIndex = slides.length - 1;
     } else if (index >= slides.length) {
@@ -15,15 +19,17 @@
         slide.style.display = 'none';
         }
     });
-    }
+}
 
-    function prevSlide() {
+
+// --------------- Main Code ---------------
+
+function prevSlide() {
     showSlide(--slideIndex);
     }
 
     function nextSlide() {
     showSlide(++slideIndex);
-    }
+}
 
-    showSlide(slideIndex);
-    
+showSlide(slideIndex);
