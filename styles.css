@@ -57,10 +57,15 @@ li {
 .carousel {
     display: block;
     max-height: 500px;
-    overflow: hidden;
+    object-fit: contain;
     position: relative;
     margin: 0 auto;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.2s ease-in-out;
 }
 
 .carousel img {
@@ -74,6 +79,10 @@ li {
     33.33% { transform: translateX(-100%); }
     66.66% { transform: translateX(-200%); }
     100% { transform: translateX(0); }
+}
+
+.carousel:hover .carousel img {
+    animation-play-state: paused;
 }
 
 
