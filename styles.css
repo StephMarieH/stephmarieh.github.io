@@ -57,10 +57,18 @@ li {
 .carousel {
     display: block;
     max-width: 60%;
+    max-height: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel img {
+    width: 100%;
     display: block;
 }
 
-    
+
 /* --------------- CAROUSEL BUTTONS ---------------- */
 
 .carousel-btn {
