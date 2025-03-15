@@ -9,12 +9,12 @@
 
 body {
     font-size: 1em;
-    margin: 0;
+    margin: 0%;
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif;
     font-family: 'Encode Sans', sans-serif;
-    background-color: #E3EBF2;
-    color: #464646;
+    background-color: rgb(255, 255, 255);
+    color: rgb(70, 70, 70);
 }
 
 .portrait .middleColumn {
@@ -23,25 +23,26 @@ body {
 
 .portrait img {
     width: 200px;
-    border: 3px solid white;
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
 }
 
 a {
-    color: #464646;
+    color: rgb(70, 70, 70);
 }
 
 ul {
     font-size: 1em;
     padding: 10px;
     text-align: right;
-    color: #464646;
-    background: #D8DFE5;
+    color: rgb(70, 70, 70);
+    background: rgb(235, 235, 235);
+    margin: 0%;
 }
 
 li {
     font-size: 1em;
-    color: #464646;
+    color: rgb(70, 70, 70);
     display: inline;
     padding: 0px 20px 0px 20px;
 }
@@ -69,8 +70,8 @@ input {
 
     input[type="submit"] {
         font-size: 1em;
-        background: #21BDFF;
-        color: white;
+        background: rgb(33, 189, 255);
+        color: rgb(255, 255, 255);
     }
 
 .spacer.v1 {
@@ -89,17 +90,16 @@ input {
     clear: both;
 }
 
-#footer {
-    font-size: 0.5em;
+.footer {
+    font-size: 1em;
+    padding: 10px;
     text-align: right;
-    background: #D8DFE5;
-    color: #464646;
+    color: rgb(70, 70, 70);
+    background: rgb(235, 235, 235);
+    margin: 0%;
 }
 
-@media (max-width: 500px) {
-    h1 {
-        font-size: 1em;
-    }
+@media (max-width: 700px) {
 
     li {
         display: block;
@@ -122,21 +122,27 @@ input {
 }
 
 .carousel-btn {
+    font-size: 1.5em;
+    font-weight: bold;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: white;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 70px 70px;
     z-index: 2;
 }
 
 .prev-btn {
     left: 0;
+    padding: 5;
+    margin: 5;
 }
 
 .next-btn {
     right: 0;
+    padding: 5;
+    margin: 5;
 }
