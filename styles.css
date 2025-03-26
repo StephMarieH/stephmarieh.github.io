@@ -1,10 +1,9 @@
 /*
     font-family: 'Barlow Condensed', sans-serif;
     font-family: 'Encode Sans', sans-serif;
-    Text color : #464646;
-    Blue : #21BDFF;
-    Dark Grey : #464646;
-    Light Gray : #E3EBF2;
+    Primary colour : #1b618c;
+    Secondary colour : #cfc09d;
+    Third colour : #bfe0f5;
 */
 
 /* --------------- GLOBAL ---------------- */
@@ -15,8 +14,8 @@ body {
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif;
     font-family: 'Encode Sans', sans-serif;
-    background-color: rgb(255, 255, 255);
-    color: rgb(70, 70, 70);
+    background-color: #ffffff;
+    color: #1b618c;
 }
 
 h1 {
@@ -30,7 +29,7 @@ h2 {
 }
 
 a {
-    color: rgb(70, 70, 70);
+    color: #1b618c;
 }
 
 
@@ -38,26 +37,41 @@ a {
 
 ul {
     padding: 15px;
-    text-align: right;
-    background: rgb(235, 235, 235);
-    margin: 0%;
+    text-align: center;
+    background: #cfc09d4b;
+    margin: 0 auto;
 }
 
 li {
     font-size: 1em;
-    color: rgb(70, 70, 70);
+    color: #1b618c;
     display: inline;
     padding: 0px 20px 0px 20px;
     margin: 0%;
 }
 
 
+/* --------------- LOGO ---------------- */
+
+.logo {
+    display: block;
+    max-width: 30%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+    .logo img {
+        width: 100%;
+        display: block;
+}
+
 /* --------------- CAROUSEL ---------------- */
 
 .carousel {
     display: block;
-    max-width: 60%;
-    max-height: 500px;
+    max-width: 40%;
+    max-height: 1080px;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
@@ -78,7 +92,7 @@ li {
     top: 50%;
     transform: translateY(-50%);
     background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: #1b618c;
     border: none;
     cursor: pointer;
     padding: 70px 70px;
@@ -106,7 +120,7 @@ li {
 
 .portrait img {
     width: 200px;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid #cfc09d;
     border-radius: 10px;
 }
 
@@ -117,13 +131,17 @@ li {
     font-size: 1em;
     padding: 1px;
     text-align: right;
-    color: rgb(70, 70, 70);
-    background: rgb(235, 235, 235);
-    margin: 0%;
+    color: #1b618c;
+    background: #cfc09d4b;
+    margin: 0 auto;
 }
 
 
 /* --------------- FORMAT ---------------- */
+
+.spacer.v1 {
+    height: 21px;
+}
 
 .spacer.v20 {
     height: 20px;
@@ -145,6 +163,7 @@ li {
     li {
         display: block;
         padding: 5px;
+        text-align: right;
     }
 
     .carousel-btn {
@@ -155,4 +174,8 @@ li {
     .carousel {
     max-width: 90%;
     }
+
+    .logo {
+        max-width: 70%;
+        }
 }
